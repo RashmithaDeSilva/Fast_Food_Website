@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./img/icons8-pizza-50.png" type="image/x-icon">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
@@ -13,9 +14,28 @@
     <body>
 
         <div class="main-dive">
+
+            <nav class="nav-bar">
+                <div class="nav-bar-box">
+                    <div class="nav-bar-box-left">
+                        <h1>Hungry Duck</h1>
+                    </div>
+                    <div class="nav-bar-box-right">
+                        <i class="fa-solid fa-bars"></i>
+                        <ul>
+                            <li><a href="#items-div-id">Foods</a></li>
+                            <li><a href="#">Delivery</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Countact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!------------------------------------------------->
+
             <div class="indro-div">
                 <div class="main-div-txt">
-                    <h1>Hungry Duck</h1>
                     <h2><span class="aouto-type">Fast Foods</span></h2>
                 </div>
                 <div class="main-div-img"></div>
@@ -23,7 +43,7 @@
 
             <!------------------------------------------------->
 
-            <div class="items-div">
+            <div class="items-div" id="items-div-id">
                 <div class="item">
                     <div class="item-img img-1"></div>
                     <div class="item-price">$15</div>
@@ -42,8 +62,15 @@
                 </div>
             </div>
 
+            <!------------------------------------------------->
+            
+            <footer>
+
+            </footer>
+
         </div>
     </body>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/4ce9731628.js" crossorigin="anonymous"></script>
 </html>

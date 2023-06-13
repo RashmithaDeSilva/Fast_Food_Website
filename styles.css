@@ -6,6 +6,72 @@
     width: 100%;
     height: 100%;
 }
+
+
+/* Nav bar ------------------------------------------ */
+.nav-bar{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(255, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-bar-box{
+    width: 80%;
+    height: 100%;
+    /* border: 1px solid rgb(0, 2, 12); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-bar-box-left{
+    height: 100%;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    /* border: 1px solid rgb(23, 201, 23); */
+}
+.nav-bar-box-right{
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid rgb(14, 47, 211); */
+}
+.nav-bar h1{
+    color: white;
+    font-size: 40px;
+    font-family: 'Righteous', cursive;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+.nav-bar ul{
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.nav-bar li{
+    padding-right: 25px;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'Righteous', cursive;
+    padding-bottom: 5px;
+}
+.nav-bar a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.nav-bar i{
+    display: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
 .indro-div {
     border: 5px solid rgb(0, 255, 0);
     position: relative;
@@ -23,11 +89,14 @@
     position: absolute;
     z-index: 10;
 }
-.main-div-txt h1, h2 {
+.main-div-txt h2 {
     font-family: 'Righteous', cursive;
     font-weight: 900;
     color: rgb(0, 255, 0);
 }
+
+
+/* Items ---------------------------------------------- */
 .items-div {
     /* border: 1px solid red; */
     width: 100%;
@@ -38,13 +107,18 @@
 }
 .item {
     /* border: 1px solid rgb(17, 0, 255); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
 }
 .item-img  {
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 100%;
-    border-radius: 20px;
 }
 .img-1 {
     background-image: url("./img/burger.jpg");
@@ -67,6 +141,8 @@
     align-items: center;
     font-size: 40px;
     font-weight: 900;
+    right: 0;
+    bottom: 0;
 }
 
 
@@ -103,7 +179,7 @@
     }
 }
 /* Tablet */
-@media only screen and (min-width: 426px) and (max-width: 768px) {
+@media only screen and (min-width: 426px) and (max-width: 850px) {
     .main-div-txt {
         text-align: center;
         position: absolute;
@@ -131,6 +207,19 @@
         margin-top: -90px;
         margin-left: 25%;
     }
+    .nav-bar-box-right {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        width: auto;
+    }
+    .nav-bar i{
+        display: flex;
+    }
+    .nav-bar ul{
+        display: none;
+    }
+
 }
 /* Mobile */
 @media only screen and (max-width: 425px) {
@@ -161,5 +250,17 @@
         height: 80px;
         margin-top: -90px;
         right: 5%;
+    }
+    .nav-bar-box-right {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        width: auto;
+    }
+    .nav-bar i{
+        display: flex;
+    }
+    .nav-bar ul{
+        display: none;
     }
 }

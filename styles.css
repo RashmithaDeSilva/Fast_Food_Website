@@ -164,10 +164,90 @@
 .delivery{
     width: 100%;
     height: 500px;
-    border: 1px solid rgb(17, 0, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid rgb(17, 0, 255); */
+}
+.delivery-box{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    /* border: 1px solid rgb(0, 255, 21); */
+}
+.delivery-box-left{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    position: absolute;
+    /* border: 1px solid rgb(255, 0, 0); */
+}
+.delivery-box-left h4{
+    font-size: 50px;
+    font-family: 'Righteous', cursive;
+    position: absolute;
+    right: 0;
+    bottom: 45%;
+}
+.delivery-box-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    height: 300px;
+    /* border: 1px solid rgb(4, 0, 255); */
+}
+.delivery-box-left img{
+    width: 500px;
+    height: 100%;
+    z-index: 1;
+}
+.delivery-box-left:hover img{
+    transform: translateX(100%);
+    cursor: pointer;
+    transition: 2s;
+}
+.delivery-box-left:hover h4{ 
+    display: none;
+}
+.delivery-box-right h4{
+    font-size: 50px;
+    font-family: 'Righteous', cursive;
+    /* border: 1px solid rgb(17, 0, 255); */
+}
+.delivery-box-right table{
+    width: 60%;
+    height: 40%;
+    font-size: 20px;
+    font-family: 'Righteous', cursive;
+    /* border: 1px solid rgb(17, 0, 255); */
+}
+.delivery-box-right table tr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid rgb(17, 0, 255); */
 }
 
-
+@media only screen and (max-width: 1110px) {
+    .delivery-box-left h4{
+        display: none;
+    }
+    .delivery-box-left{
+        position: static;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+    .delivery-box{
+        flex-direction: column;
+    }
+}
 /* Decstop */
 @media only screen and (min-width: 769px) {
     .main-div-txt {
@@ -233,7 +313,15 @@
     .nav-bar ul{
         display: none;
     }
-
+    .delivery-box-left img{
+        width: 100%;
+    }
+    .delivery-box-right{
+        width: 100%;
+    }
+    .delivery-box-right h4{
+       font-size: 30px;
+    }
 }
 /* Mobile */
 @media only screen and (max-width: 425px) {
@@ -268,10 +356,26 @@
         align-items: center;
         width: auto;
     }
+    .nav-bar-box-left h1{
+        font-size: 30px;
+    }
     .nav-bar i{
         display: flex;
+        font-size: 20px;
     }
     .nav-bar ul{
         display: none;
+    }
+    .delivery-box-left img{
+        width: 100%;
+    }
+    .delivery-box-right{
+        width: 100%;
+    }
+    .delivery-box-right h4{
+       font-size: 30px;
+    }
+    .delivery-box-right table{
+       width: 100%;
     }
 }

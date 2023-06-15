@@ -272,6 +272,20 @@
 }
 
 
+/* Contact us ---------------------------------------------- */
+.contact-us{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-us h4{
+    font-size: 50px;
+    font-family: 'Righteous', cursive;
+    color: red;
+}
+
+
 @media only screen and (max-width: 1110px) {
     .delivery-box-left h4{
         display: none;
